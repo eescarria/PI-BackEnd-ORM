@@ -42,8 +42,16 @@ public class OdontologoController {
 
     @PutMapping
     public ResponseEntity<Odontologo> actualizarOdontologo(@RequestBody Odontologo odontologo){
-        logger.debug("Se ha actualizado el odontólogo con id: " + odontologo.getId());
-        return ResponseEntity.ok(odontologoService.actualizarOdontologo(odontologo));
+        ResponseEntity<Odontologo> respuesta;
+
+        if(odontologoService.buscarOdontologo(odontologo.getId()).isPresent()){
+            respuesta = ResponseEntity.ok(odontologoService.actualizarOdontologo(odontologo));
+            logger.debug("Se ha actualizado el odontólogo con id: " + odontologo.getId());
+        }else {
+            respuesta = ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+            logger.debug("No se ha encontrado el odontólogo con id: " + odontologo.getId());
+        }
+        return respuesta;
     }
 
     @DeleteMapping("/{id}")

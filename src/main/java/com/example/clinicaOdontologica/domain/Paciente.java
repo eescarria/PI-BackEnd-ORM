@@ -29,6 +29,15 @@ public class Paciente {
     @OneToMany(mappedBy = "paciente", fetch = FetchType.LAZY)
     private Set<Turno> turnos = new HashSet<>();
 
+    public Paciente(String apellido, String nombre, String documento, LocalDate fechaIngreso, String email, Domicilio domicilio) {
+        this.apellido = apellido;
+        this.nombre = nombre;
+        this.documento = documento;
+        this.fechaIngreso = fechaIngreso;
+        this.email = email;
+        this.domicilio = domicilio;
+    }
+
     public Paciente() {
     }
 

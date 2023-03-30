@@ -113,3 +113,59 @@
 [2023-03-29 09:59:52] [ DEBUG] [PacienteController:43] Se ha encontrado el paciente con id: 1
 [2023-03-29 10:00:01] [ DEBUG] [PacienteController:35] Se ha actualizado el paciente con id: 1
 [2023-03-29 10:00:01] [ DEBUG] [PacienteController:65] Se genera la lista de pacientes
+[2023-03-30 15:12:39] [ DEBUG] [PacienteController:28] Se ha creado el paciente: Estefania Escarria
+[2023-03-30 15:12:52] [ DEBUG] [OdontologoController:39] Se ha creado el odontólogo: Juan Ruiz
+[2023-03-30 15:18:37] [ DEBUG] [PacienteController:28] Se ha creado el paciente: Estefania Escarria
+[2023-03-30 15:18:43] [ DEBUG] [OdontologoController:39] Se ha creado el odontólogo: Juan Ruiz
+[2023-03-30 15:28:41] [ DEBUG] [PacienteController:28] Se ha creado el paciente: Estefania Escarria
+[2023-03-30 15:28:46] [ DEBUG] [OdontologoController:39] Se ha creado el odontólogo: Juan Ruiz
+[2023-03-30 15:28:51] [ DEBUG] [PacienteController:74] Se genera la lista de pacientes
+[2023-03-30 15:28:57] [ DEBUG] [OdontologoController:69] Se genera la lista de odontólogos
+[2023-03-30 15:32:52] [ DEBUG] [PacienteController:28] Se ha creado el paciente: Estefania Escarria
+[2023-03-30 15:32:56] [ DEBUG] [OdontologoController:39] Se ha creado el odontólogo: Juan Ruiz
+[2023-03-30 15:33:37] [ DEBUG] [TurnoController:76] Se ha encontrado el turno con id: 1
+[2023-03-30 15:33:59] [ DEBUG] [TurnoController:90] Se ha actualizado el turno con id: 1
+[2023-03-30 15:34:07] [ DEBUG] [TurnoController:93] No se ha encontrado el turno con id: 4
+[2023-03-30 15:34:16] [ DEBUG] [TurnoController:90] Se ha actualizado el turno con id: 1
+[2023-03-30 15:38:46] [ DEBUG] [PacienteController:28] Se ha creado el paciente: Estefania Escarria
+[2023-03-30 15:38:50] [ DEBUG] [OdontologoController:39] Se ha creado el odontólogo: Juan Ruiz
+[2023-03-30 15:39:00] [ DEBUG] [TurnoController:43] Se ha generado el turno para la fecha: 2023-04-10
+[2023-03-30 15:39:09] [ DEBUG] [TurnoController:43] Se ha generado el turno para la fecha: 2023-04-11
+[2023-03-30 15:39:14] [ DEBUG] [TurnoController:46] No se logró generar el turno para la fecha: 2023-04-11
+[2023-03-30 15:39:31] [ DEBUG] [TurnoController:43] Se ha generado el turno para la fecha: 2023-04-12
+[2023-03-30 15:39:37] [ DEBUG] [TurnoController:56] Se genera la lista de turnos
+[2023-03-30 15:39:54] [ DEBUG] [TurnoController:69] Turno eliminado - ID: 1
+[2023-03-30 15:44:31] [ DEBUG] [PacienteController:28] Se ha creado el paciente: Estefania Escarria
+[2023-03-30 15:44:34] [ DEBUG] [OdontologoController:39] Se ha creado el odontólogo: Juan Ruiz
+[2023-03-30 15:44:44] [ DEBUG] [TurnoController:43] Se ha generado el turno para la fecha: 2023-04-12
+[2023-03-30 15:44:49] [ DEBUG] [TurnoController:56] Se genera la lista de turnos
+[2023-03-30 15:56:21] [ DEBUG] [OdontologoController:39] Se ha creado el odontólogo: Juan Alvear
+[2023-03-30 15:56:26] [ DEBUG] [OdontologoController:69] Se genera la lista de odontólogos
+[2023-03-30 15:56:35] [ DEBUG] [OdontologoController:39] Se ha creado el odontólogo: Julian Garcia
+[2023-03-30 15:56:40] [ DEBUG] [OdontologoController:69] Se genera la lista de odontólogos
+[2023-03-30 15:56:45] [ DEBUG] [OdontologoController:29] Se ha encontrado el odontólogo con id: 1
+[2023-03-30 15:56:52] [ DEBUG] [OdontologoController:49] Se ha actualizado el odontólogo con id: 1
+[2023-03-30 15:56:52] [ DEBUG] [OdontologoController:69] Se genera la lista de odontólogos
+[2023-03-30 15:57:10] [ DEBUG] [PacienteController:28] Se ha creado el paciente: Estefania Escarria
+[2023-03-30 15:57:36] [ DEBUG] [PacienteController:28] Se ha creado el paciente: NORALBA ARTEAGA
+[2023-03-30 15:57:39] [ DEBUG] [PacienteController:74] Se genera la lista de pacientes
+[2023-03-30 15:57:43] [ DEBUG] [PacienteController:52] Se ha encontrado el paciente con id: 1
+[2023-03-30 15:57:47] [ DEBUG] [PacienteController:39] Se ha actualizado el paciente con id: 1
+[2023-03-30 15:57:47] [ DEBUG] [PacienteController:74] Se genera la lista de pacientes
+[2023-03-30 15:58:02] [ DEBUG] [TurnoController:43] Se ha generado el turno para la fecha: 2023-03-31
+[2023-03-30 15:58:06] [ DEBUG] [TurnoController:56] Se genera la lista de turnos
+[2023-03-30 15:58:34] [ DEBUG] [TurnoController:43] Se ha generado el turno para la fecha: 2023-04-05
+[2023-03-30 15:58:40] [ DEBUG] [TurnoController:56] Se genera la lista de turnos
+[2023-03-30 15:58:58] [ DEBUG] [TurnoController:43] Se ha generado el turno para la fecha: 2023-03-30
+[2023-03-30 15:59:03] [ DEBUG] [TurnoController:56] Se genera la lista de turnos
+[2023-03-30 15:59:15] [ DEBUG] [TurnoController:69] Turno eliminado - ID: 3
+[2023-03-30 16:02:32] [ DEBUG] [OdontologoController:39] Se ha creado el odontólogo: Julian Garcia
+[2023-03-30 16:02:46] [ DEBUG] [OdontologoController:39] Se ha creado el odontólogo: Juan Alvear
+[2023-03-30 16:02:51] [ DEBUG] [OdontologoController:69] Se genera la lista de odontólogos
+[2023-03-30 16:03:08] [ DEBUG] [PacienteController:28] Se ha creado el paciente: Estefania Escarria
+[2023-03-30 16:03:24] [ DEBUG] [PacienteController:28] Se ha creado el paciente: NORALBA ARTEAGA
+[2023-03-30 16:03:32] [ DEBUG] [PacienteController:74] Se genera la lista de pacientes
+[2023-03-30 16:03:37] [ DEBUG] [TurnoController:59] No se logró generar la lista de turnos
+[2023-03-30 16:04:25] [ DEBUG] [TurnoController:43] Se ha generado el turno para la fecha: 2023-03-31
+[2023-03-30 16:04:32] [ DEBUG] [TurnoController:43] Se ha generado el turno para la fecha: 2023-04-06
+[2023-03-30 16:04:36] [ DEBUG] [TurnoController:56] Se genera la lista de turnos

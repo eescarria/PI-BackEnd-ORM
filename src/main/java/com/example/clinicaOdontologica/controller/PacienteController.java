@@ -32,8 +32,17 @@ public class PacienteController {
 
     @PutMapping
     public ResponseEntity<Paciente> actualizarPaciente(@RequestBody Paciente paciente){
-        logger.debug("Se ha actualizado el paciente con id: " + paciente.getId());
-        return ResponseEntity.ok(pacienteService.actualizarPaciente(paciente));
+        ResponseEntity<Paciente> respuesta;
+
+        if(pacienteService.buscarPaciente(paciente.getId()).isPresent()){
+            respuesta= ResponseEntity.ok(pacienteService.actualizarPaciente(paciente));
+            logger.debug("Se ha actualizado el paciente con id: " + paciente.getId());
+        }else {
+            respuesta = ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+            logger.debug("No se ha encontrado el paciente con id: " + paciente.getId());
+        }
+        return respuesta;
+
     }
 
     @GetMapping("id/{id}")

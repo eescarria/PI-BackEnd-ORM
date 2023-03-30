@@ -43,10 +43,10 @@ window.addEventListener('load', function () {
             //luego los datos de la pelicula
             //como ultima columna el boton eliminar
             turnoRow.innerHTML = '<td>' + updateButton + '</td>' +
-                    '<td class=\"td_paciente_id\">' + turno.paciente.id + '</td>' +
-                    '<td class=\"td_paciente_nombre\">' + turno.paciente.nombre.toUpperCase() + '</td>' +
-                    '<td class=\"td_odontologo_id\">' + turno.odontologo.id + '</td>' +
-                    '<td class=\"td_odontologo_nombre\">' + turno.odontologo.nombre + '</td>' +
+                    '<td class=\"td_paciente_id\">' + turno.paciente_id + '</td>' +
+                    '<td class=\"td_paciente_nombre\">' + turno.nombre_paciente.toUpperCase() + '</td>' +
+                    '<td class=\"td_odontologo_id\">' + turno.odontologo_id + '</td>' +
+                    '<td class=\"td_odontologo_nombre\">' + turno.nombre_odontologo.toUpperCase() + '</td>' +
                     '<td class=\"td_fecha\">' + turno.fecha + '</td>' +
                     '<td>' + deleteButton + '</td>';
 

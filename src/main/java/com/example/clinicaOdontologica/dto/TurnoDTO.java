@@ -11,6 +11,9 @@ public class TurnoDTO {
     private String nombre_odontologo;
     private String nombre_paciente;
 
+    public TurnoDTO() {
+    }
+
     public Long getId() {
         return id;
     }

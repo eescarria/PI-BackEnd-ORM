@@ -1,6 +1,8 @@
 package com.example.clinicaOdontologica.controller;
 
-import com.example.clinicaOdontologica.domain.Turno;
+import com.example.clinicaOdontologica.domain.Odontologo;
+import com.example.clinicaOdontologica.domain.Paciente;
+import com.example.clinicaOdontologica.dto.TurnoDTO;
 import com.example.clinicaOdontologica.service.OdontologoService;
 import com.example.clinicaOdontologica.service.PacienteService;
 import com.example.clinicaOdontologica.service.TurnoService;
@@ -30,34 +32,51 @@ public class TurnoController {
         this.pacienteService = pacienteService;
     }
 
-
     @PostMapping
-    public ResponseEntity<Turno> registrarTurno(@RequestBody Turno turno){
-      ResponseEntity<Turno> respuesta;
-      if(pacienteService.buscarPaciente(turno.getPaciente().getId()).isPresent() &&
-              odontologoService.buscarOdontologo(turno.getOdontologo().getId()).isPresent()){
+    public ResponseEntity<TurnoDTO> registrarTurno(@RequestBody TurnoDTO turno){
+      ResponseEntity<TurnoDTO> respuesta;
+      Optional<Paciente> pacienteBuscado = pacienteService.buscarPaciente(turno.getPaciente_id());
+      Optional<Odontologo> odontologoBuscado = odontologoService.buscarOdontologo(turno.getOdontologo_id());
+
+      if(pacienteBuscado.isPresent() && odontologoBuscado.isPresent()){
           respuesta = ResponseEntity.ok(turnoService.guardarTurno(turno));
+          logger.debug("Se ha generado el turno para la fecha: "+ turno.getFecha());
       }else {
           respuesta = ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+          logger.debug("No se logró generar el turno para la fecha: "+ turno.getFecha());
       }
       return respuesta;
     }
 
     @GetMapping
-    public ResponseEntity<List<Turno>> listarTurnos(){
-        ResponseEntity<List<Turno>> respuesta;
+    public ResponseEntity<List<TurnoDTO>> listarTurnos(){
+        ResponseEntity<List<TurnoDTO>> respuesta;
         if(!turnoService.listarTurnos().isEmpty()){
             respuesta = ResponseEntity.ok(turnoService.listarTurnos());
+            logger.debug("Se genera la lista de turnos");
         }else {
             respuesta = ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+            logger.debug("No se logró generar la lista de turnos");
         }
 
         return respuesta;
     }
 
+    @DeleteMapping("/{id}")
+    public ResponseEntity<String> eliminarTurno(@PathVariable Long id){
+        if(turnoService.buscarTurno(id).isPresent()){
+            turnoService.eliminarTurno(id);
+            logger.debug("Turno eliminado - ID: " + id);
+            return ResponseEntity.ok("Turno eliminado - ID: " +id);
+        }else {
+            logger.debug("Turno no encontrado");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Turno no encontrado");
+        }
+    }
+
     @GetMapping("id/{id}")
-    public ResponseEntity<Turno> buscarTurno(@PathVariable Long id){
-        Optional<Turno> turnoBuscado = turnoService.buscarTurno(id);
+    public ResponseEntity<TurnoDTO> buscarTurno(@PathVariable Long id){
+        Optional<TurnoDTO> turnoBuscado = turnoService.buscarTurno(id);
         if(turnoBuscado.isPresent()){
             logger.debug("Se ha encontrado el turno con id: " + id);
             return ResponseEntity.ok(turnoBuscado.get());
@@ -67,28 +86,16 @@ public class TurnoController {
         }
     }
 
-
-    @DeleteMapping("/{id}")
-    public ResponseEntity<String> eliminarTurno(@PathVariable Long id){
-        if(turnoService.buscarTurno(id).isPresent()){
-            turnoService.eliminarTurno(id);
-            logger.debug("Turno eliminado - ID: " + id);
-            return ResponseEntity.ok("Turno eliminado - ID: " +id);
-        }else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Turno no encontrado");
-        }
-    }
-
     @PutMapping
-    public ResponseEntity<Turno> actualizarTurno(@RequestBody Turno turno){
-        ResponseEntity<Turno> respuesta;
+    public ResponseEntity<TurnoDTO> actualizarTurno(@RequestBody TurnoDTO turnoDTO){
+        ResponseEntity<TurnoDTO> respuesta;
 
-        if(turnoService.buscarTurno(turno.getId()).isPresent()){
-            respuesta = ResponseEntity.ok(turnoService.actualizarTurno(turno));
-            logger.debug("Se ha actualizado el turno con id: " + turno.getId());
+        if(turnoService.buscarTurno(turnoDTO.getId()).isPresent()){
+            respuesta = ResponseEntity.ok(turnoService.actualizarTurno(turnoDTO));
+            logger.debug("Se ha actualizado el turno con id: " + turnoDTO.getId());
         }else {
             respuesta = ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
-            logger.debug("No se ha encontrado el turno con id: " + turno.getId());
+            logger.debug("No se ha encontrado el turno con id: " + turnoDTO.getId());
         }
         return respuesta;
     }
