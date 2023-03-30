@@ -1,0 +1,115 @@
+[2023-03-27 11:23:45] [ DEBUG] [PacienteController:28] Se ha creado el paciente con id: null
+[2023-03-27 11:24:34] [ DEBUG] [PacienteController:28] Se ha creado el paciente con id: null
+[2023-03-27 11:25:19] [ DEBUG] [PacienteController:60] Se genera la list de pacientes
+[2023-03-27 11:26:08] [ DEBUG] [PacienteController:35] Se ha actualizado el paciente con id: 1
+[2023-03-27 11:28:32] [ DEBUG] [PacienteController:28] Se ha creado el paciente con id: null
+[2023-03-27 11:28:41] [ DEBUG] [PacienteController:60] Se genera la list de pacientes
+[2023-03-27 11:29:01] [ DEBUG] [PacienteController:35] Se ha actualizado el paciente con id: 1
+[2023-03-27 11:29:07] [ DEBUG] [PacienteController:60] Se genera la list de pacientes
+[2023-03-27 11:29:17] [ DEBUG] [PacienteController:43] Se ha encontrado el paciente con id: 1
+[2023-03-27 11:35:21] [ DEBUG] [PacienteController:54] Se ha eliminado el paciente con id: 1
+[2023-03-28 09:19:11] [ DEBUG] [PacienteController:28] Se ha creado el paciente: Juan Alvear
+[2023-03-28 09:19:30] [ DEBUG] [PacienteController:60] Se genera la list de pacientes
+[2023-03-28 09:19:45] [ DEBUG] [PacienteController:35] Se ha actualizado el paciente con id: 1
+[2023-03-28 09:19:54] [ DEBUG] [PacienteController:43] Se ha encontrado el paciente con id: 1
+[2023-03-28 09:20:12] [ DEBUG] [PacienteController:54] Paciente eliminado - ID: 1
+[2023-03-28 10:00:58] [ DEBUG] [PacienteController:28] Se ha creado el paciente: Juan Alvear
+[2023-03-28 10:01:06] [ DEBUG] [PacienteController:65] Se genera la list de pacientes
+[2023-03-28 10:01:16] [ DEBUG] [OdontologoController:40] Se ha creado el odontólogo: Miguel Ruiz
+[2023-03-28 10:01:38] [ DEBUG] [OdontologoController:30] Se ha encontrado el odontólogo con id: 1
+[2023-03-28 10:01:49] [ DEBUG] [OdontologoController:46] Se ha actualizado el odontólogo con id: 1
+[2023-03-28 10:02:09] [ DEBUG] [OdontologoController:54] Odontólogo eliminado - ID: 1
+[2023-03-28 10:05:38] [ DEBUG] [OdontologoController:40] Se ha creado el odontólogo: Miguel Ruiz
+[2023-03-28 10:06:25] [ DEBUG] [OdontologoController:30] Se ha encontrado el odontólogo con id: 1
+[2023-03-28 10:06:33] [ DEBUG] [OdontologoController:46] Se ha actualizado el odontólogo con id: 1
+[2023-03-28 10:06:56] [ DEBUG] [OdontologoController:54] Odontólogo eliminado - ID: 1
+[2023-03-28 11:32:26] [ DEBUG] [OdontologoController:39] Se ha creado el odontólogo: Miguel Ruiz
+[2023-03-28 11:32:34] [ DEBUG] [OdontologoController:61] Se genera la lista de odontólogos
+[2023-03-28 11:32:45] [ DEBUG] [OdontologoController:29] Se ha encontrado el odontólogo con id: 1
+[2023-03-28 11:32:50] [ DEBUG] [OdontologoController:45] Se ha actualizado el odontólogo con id: 1
+[2023-03-28 11:32:59] [ DEBUG] [OdontologoController:53] Odontólogo eliminado - ID: 1
+[2023-03-28 11:33:07] [ DEBUG] [OdontologoController:61] Se genera la lista de odontólogos
+[2023-03-28 11:33:13] [ DEBUG] [OdontologoController:32] No se ha encontrado el odontólogo con id: 1
+[2023-03-28 11:33:24] [ DEBUG] [OdontologoController:45] Se ha actualizado el odontólogo con id: 1
+[2023-03-28 11:34:09] [ DEBUG] [OdontologoController:61] Se genera la lista de odontólogos
+[2023-03-28 16:20:26] [ DEBUG] [PacienteController:28] Se ha creado el paciente: Juan Alvear
+[2023-03-28 16:20:42] [ DEBUG] [OdontologoController:39] Se ha creado el odontólogo: Miguel Ruiz
+[2023-03-28 16:22:59] [ DEBUG] [PacienteController:28] Se ha creado el paciente: Juan Alvear
+[2023-03-28 16:23:18] [ DEBUG] [OdontologoController:39] Se ha creado el odontólogo: Miguel Ruiz
+[2023-03-28 16:26:09] [ DEBUG] [PacienteController:43] Se ha encontrado el paciente con id: 1
+[2023-03-28 16:26:14] [ DEBUG] [PacienteController:65] Se genera la lista de pacientes
+[2023-03-28 16:27:19] [ DEBUG] [TurnoController:62] Se ha encontrado el turno con id: 1
+[2023-03-28 16:27:58] [ DEBUG] [TurnoController:88] Se ha actualizado el turno con id: 1
+[2023-03-28 16:30:17] [ DEBUG] [OdontologoController:61] Se genera la lista de odontólogos
+[2023-03-28 16:30:25] [ DEBUG] [OdontologoController:39] Se ha creado el odontólogo: Pepe Perez
+[2023-03-28 16:30:29] [ DEBUG] [OdontologoController:61] Se genera la lista de odontólogos
+[2023-03-28 16:30:37] [ DEBUG] [OdontologoController:39] Se ha creado el odontólogo: Julian Garcia
+[2023-03-28 16:30:39] [ DEBUG] [OdontologoController:61] Se genera la lista de odontólogos
+[2023-03-28 16:31:05] [ DEBUG] [PacienteController:28] Se ha creado el paciente: Estefania Escarria
+[2023-03-28 16:31:15] [ DEBUG] [PacienteController:65] Se genera la lista de pacientes
+[2023-03-28 16:31:25] [ DEBUG] [OdontologoController:61] Se genera la lista de odontólogos
+[2023-03-28 16:31:26] [ DEBUG] [OdontologoController:29] Se ha encontrado el odontólogo con id: 1
+[2023-03-28 16:31:31] [ DEBUG] [OdontologoController:45] Se ha actualizado el odontólogo con id: 1
+[2023-03-28 16:31:31] [ DEBUG] [OdontologoController:61] Se genera la lista de odontólogos
+[2023-03-28 16:31:46] [ DEBUG] [PacienteController:65] Se genera la lista de pacientes
+[2023-03-28 16:31:54] [ DEBUG] [PacienteController:43] Se ha encontrado el paciente con id: 1
+[2023-03-28 16:32:09] [ DEBUG] [OdontologoController:61] Se genera la lista de odontólogos
+[2023-03-28 16:32:11] [ DEBUG] [OdontologoController:53] Odontólogo eliminado - ID: 2
+[2023-03-28 16:32:15] [ DEBUG] [PacienteController:65] Se genera la lista de pacientes
+[2023-03-28 16:32:15] [ DEBUG] [PacienteController:43] Se ha encontrado el paciente con id: 1
+[2023-03-28 16:32:26] [ DEBUG] [PacienteController:55] Paciente eliminado - ID: 1
+[2023-03-28 16:32:43] [ DEBUG] [PacienteController:28] Se ha creado el paciente: Estefania Escarria
+[2023-03-28 16:32:48] [ DEBUG] [PacienteController:65] Se genera la lista de pacientes
+[2023-03-28 16:32:51] [ DEBUG] [PacienteController:43] Se ha encontrado el paciente con id: 2
+[2023-03-28 16:35:08] [ DEBUG] [PacienteController:43] Se ha encontrado el paciente con id: 2
+[2023-03-28 16:36:48] [ DEBUG] [OdontologoController:39] Se ha creado el odontólogo: Julian Herrera
+[2023-03-28 16:36:52] [ DEBUG] [OdontologoController:61] Se genera la lista de odontólogos
+[2023-03-28 16:36:55] [ DEBUG] [OdontologoController:29] Se ha encontrado el odontólogo con id: 3
+[2023-03-28 16:37:01] [ DEBUG] [OdontologoController:45] Se ha actualizado el odontólogo con id: 3
+[2023-03-28 16:37:02] [ DEBUG] [OdontologoController:61] Se genera la lista de odontólogos
+[2023-03-28 16:37:25] [ DEBUG] [PacienteController:65] Se genera la lista de pacientes
+[2023-03-28 16:37:27] [ DEBUG] [PacienteController:43] Se ha encontrado el paciente con id: 2
+[2023-03-28 16:37:46] [ DEBUG] [PacienteController:65] Se genera la lista de pacientes
+[2023-03-28 16:38:22] [ DEBUG] [PacienteController:35] Se ha actualizado el paciente con id: 2
+[2023-03-28 16:38:28] [ DEBUG] [PacienteController:65] Se genera la lista de pacientes
+[2023-03-28 16:38:45] [ DEBUG] [PacienteController:43] Se ha encontrado el paciente con id: 2
+[2023-03-28 16:42:45] [ DEBUG] [PacienteController:28] Se ha creado el paciente: Estefania Escarria
+[2023-03-28 16:42:50] [ DEBUG] [PacienteController:65] Se genera la lista de pacientes
+[2023-03-28 16:42:53] [ DEBUG] [PacienteController:43] Se ha encontrado el paciente con id: 1
+[2023-03-28 16:43:20] [ DEBUG] [PacienteController:43] Se ha encontrado el paciente con id: 1
+[2023-03-28 16:43:31] [ DEBUG] [PacienteController:43] Se ha encontrado el paciente con id: 1
+[2023-03-28 16:50:10] [ DEBUG] [PacienteController:43] Se ha encontrado el paciente con id: 1
+[2023-03-28 16:50:23] [ DEBUG] [PacienteController:65] Se genera la lista de pacientes
+[2023-03-28 16:50:25] [ DEBUG] [PacienteController:43] Se ha encontrado el paciente con id: 1
+[2023-03-28 16:52:40] [ DEBUG] [OdontologoController:61] Se genera la lista de odontólogos
+[2023-03-28 16:52:48] [ DEBUG] [OdontologoController:39] Se ha creado el odontólogo: Pepe Perez
+[2023-03-28 16:52:52] [ DEBUG] [OdontologoController:61] Se genera la lista de odontólogos
+[2023-03-28 16:52:54] [ DEBUG] [OdontologoController:29] Se ha encontrado el odontólogo con id: 1
+[2023-03-28 16:53:00] [ DEBUG] [OdontologoController:45] Se ha actualizado el odontólogo con id: 1
+[2023-03-28 16:53:00] [ DEBUG] [OdontologoController:61] Se genera la lista de odontólogos
+[2023-03-28 16:55:05] [ DEBUG] [PacienteController:28] Se ha creado el paciente: Estefania Escarria
+[2023-03-28 16:55:08] [ DEBUG] [PacienteController:65] Se genera la lista de pacientes
+[2023-03-28 16:55:10] [ DEBUG] [PacienteController:43] Se ha encontrado el paciente con id: 1
+[2023-03-28 16:56:39] [ DEBUG] [PacienteController:65] Se genera la lista de pacientes
+[2023-03-28 16:56:43] [ DEBUG] [PacienteController:65] Se genera la lista de pacientes
+[2023-03-28 16:56:57] [ DEBUG] [PacienteController:28] Se ha creado el paciente: Estefania Escarria
+[2023-03-28 16:57:05] [ DEBUG] [PacienteController:65] Se genera la lista de pacientes
+[2023-03-28 16:57:08] [ DEBUG] [PacienteController:43] Se ha encontrado el paciente con id: 1
+[2023-03-28 17:00:04] [ DEBUG] [PacienteController:43] Se ha encontrado el paciente con id: 1
+[2023-03-28 17:14:21] [ DEBUG] [PacienteController:28] Se ha creado el paciente: Estefania Escarria
+[2023-03-28 17:14:27] [ DEBUG] [PacienteController:65] Se genera la lista de pacientes
+[2023-03-28 17:14:39] [ DEBUG] [PacienteController:43] Se ha encontrado el paciente con id: 1
+[2023-03-29 09:55:58] [ DEBUG] [PacienteController:28] Se ha creado el paciente: Estefania Escarria
+[2023-03-29 09:56:02] [ DEBUG] [PacienteController:65] Se genera la lista de pacientes
+[2023-03-29 09:56:03] [ DEBUG] [PacienteController:43] Se ha encontrado el paciente con id: 1
+[2023-03-29 09:56:14] [ DEBUG] [PacienteController:35] Se ha actualizado el paciente con id: 1
+[2023-03-29 09:56:14] [ DEBUG] [PacienteController:65] Se genera la lista de pacientes
+[2023-03-29 09:59:25] [ DEBUG] [OdontologoController:39] Se ha creado el odontólogo: Pepe Perez
+[2023-03-29 09:59:30] [ DEBUG] [OdontologoController:61] Se genera la lista de odontólogos
+[2023-03-29 09:59:32] [ DEBUG] [OdontologoController:29] Se ha encontrado el odontólogo con id: 1
+[2023-03-29 09:59:36] [ DEBUG] [OdontologoController:45] Se ha actualizado el odontólogo con id: 1
+[2023-03-29 09:59:37] [ DEBUG] [OdontologoController:61] Se genera la lista de odontólogos
+[2023-03-29 09:59:49] [ DEBUG] [PacienteController:65] Se genera la lista de pacientes
+[2023-03-29 09:59:52] [ DEBUG] [PacienteController:43] Se ha encontrado el paciente con id: 1
+[2023-03-29 10:00:01] [ DEBUG] [PacienteController:35] Se ha actualizado el paciente con id: 1
+[2023-03-29 10:00:01] [ DEBUG] [PacienteController:65] Se genera la lista de pacientes
