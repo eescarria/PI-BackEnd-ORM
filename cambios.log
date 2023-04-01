@@ -169,3 +169,23 @@
 [2023-03-30 16:04:25] [ DEBUG] [TurnoController:43] Se ha generado el turno para la fecha: 2023-03-31
 [2023-03-30 16:04:32] [ DEBUG] [TurnoController:43] Se ha generado el turno para la fecha: 2023-04-06
 [2023-03-30 16:04:36] [ DEBUG] [TurnoController:56] Se genera la lista de turnos
+[2023-03-31 12:13:52] [ DEBUG] [OdontologoController:39] Se ha creado el odontólogo: Estefania Perez
+[2023-03-31 12:14:05] [ DEBUG] [OdontologoController:39] Se ha creado el odontólogo: Julian Herrera
+[2023-03-31 12:14:08] [ DEBUG] [OdontologoController:69] Se genera la lista de odontólogos
+[2023-03-31 12:14:12] [ DEBUG] [OdontologoController:29] Se ha encontrado el odontólogo con id: 2
+[2023-03-31 12:14:15] [ DEBUG] [OdontologoController:49] Se ha actualizado el odontólogo con id: 2
+[2023-03-31 12:14:16] [ DEBUG] [OdontologoController:69] Se genera la lista de odontólogos
+[2023-03-31 12:14:46] [ DEBUG] [PacienteController:28] Se ha creado el paciente: Estefania Escarria
+[2023-03-31 12:14:59] [ DEBUG] [PacienteController:28] Se ha creado el paciente: NORALBA ARTEAGA
+[2023-03-31 12:15:03] [ DEBUG] [PacienteController:74] Se genera la lista de pacientes
+[2023-03-31 12:15:12] [ DEBUG] [PacienteController:52] Se ha encontrado el paciente con id: 2
+[2023-03-31 12:15:18] [ DEBUG] [PacienteController:39] Se ha actualizado el paciente con id: 2
+[2023-03-31 12:15:18] [ DEBUG] [PacienteController:74] Se genera la lista de pacientes
+[2023-03-31 12:15:21] [ DEBUG] [PacienteController:74] Se genera la lista de pacientes
+[2023-03-31 12:15:37] [ DEBUG] [TurnoController:43] Se ha generado el turno para la fecha: 2023-04-04
+[2023-03-31 12:15:46] [ DEBUG] [TurnoController:43] Se ha generado el turno para la fecha: 2023-04-08
+[2023-03-31 12:15:51] [ DEBUG] [TurnoController:56] Se genera la lista de turnos
+[2023-03-31 12:15:55] [ DEBUG] [TurnoController:81] Se ha encontrado el turno con id: 2
+[2023-03-31 12:16:22] [ DEBUG] [TurnoController:69] Turno eliminado - ID: 2
+[2023-03-31 12:19:03] [ DEBUG] [PacienteController:74] Se genera la lista de pacientes
+[2023-03-31 12:20:56] [ DEBUG] [PacienteController:82] Se ha encontrado el paciente con email: nora@mail.com
