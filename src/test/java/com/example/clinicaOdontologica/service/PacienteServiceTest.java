@@ -56,6 +56,28 @@ class PacienteServiceTest {
     @Test
     @Order(4)
     public void actualizarPacienteTest(){
-        
+        Domicilio domicilio = new Domicilio("Avenida","Quinta","Cali","Valle");
+        Paciente pacienteAActualizar = new Paciente("Alvear","Juan","1234",
+                LocalDate.of(2023,3,17),"juan@mail.com",domicilio);
+        pacienteAActualizar.setId(2L);
+
+        Paciente pacienteActualizado = pacienteService.actualizarPaciente(pacienteAActualizar);
+        assertEquals("1234", pacienteActualizado.getDocumento());
     }
+    @Test
+    @Order(5)
+    public void buscarPacienteXEmail(){
+        String emailABuscar = "estefy@mail.com";
+        Optional<Paciente> pacienteBuscado = pacienteService.buscarXEmail(emailABuscar);
+        assertNotNull(pacienteBuscado.get());
+    }
+
+    @Test
+    @Order(6)
+    public void eliminarPacienteTest(){
+        pacienteService.eliminarPaciente(2L);
+        assertFalse(pacienteService.buscarPaciente(2L).isPresent());
+    }
+
+
 }
