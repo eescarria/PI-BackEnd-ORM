@@ -2,6 +2,7 @@ package com.example.clinicaOdontologica.service;
 
 import com.example.clinicaOdontologica.domain.Domicilio;
 import com.example.clinicaOdontologica.domain.Paciente;
+import com.example.clinicaOdontologica.exceptions.ResourceNotFoundException;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -74,7 +75,7 @@ class PacienteServiceTest {
 
     @Test
     @Order(6)
-    public void eliminarPacienteTest(){
+    public void eliminarPacienteTest() throws ResourceNotFoundException {
         pacienteService.eliminarPaciente(2L);
         assertFalse(pacienteService.buscarPaciente(2L).isPresent());
     }

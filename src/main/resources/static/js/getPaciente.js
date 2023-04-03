@@ -42,18 +42,18 @@ window.addEventListener('load', function () {
             //como primer columna pondremos el boton modificar
             //luego los datos de la pelicula
             //como ultima columna el boton eliminar
-            pacienteRow.innerHTML = '<td>' + updateButton + '</td>' +
-                    '<td class=\"td_paciente_apellido\">' + paciente.apellido.toUpperCase() + '</td>' +
-                    '<td class=\"td_paciente_nombre\">' + paciente.nombre.toUpperCase() + '</td>' +
-                    '<td class=\"td_documento\">' + paciente.documento.toUpperCase() + '</td>' +
-                    '<td class=\"td_fechaIngreso\">' + paciente.fechaIngreso + '</td>' +
-                    '<td class=\"td_email\">' + paciente.email + '</td>' +
-                    '<td class=\"td_domicilio_id\">' + paciente.domicilio.id + '</td>' +
-                    '<td class=\"td_calle\">' + paciente.domicilio.calle + '</td>' +
-                    '<td class=\"td_numero\">' + paciente.domicilio.numero + '</td>' +
-                    '<td class=\"td_ciudad\">' + paciente.domicilio.ciudad + '</td>' +
-                    '<td class=\"td_departamento\">' + paciente.domicilio.departamento + '</td>' +
-                    '<td>' + deleteButton + '</td>';
+            pacienteRow.innerHTML = '<td class=\"table-light\">' + updateButton + '</td>' +
+                    '<td class=\"table-light\">' + paciente.apellido.toUpperCase() + '</td>' +
+                    '<td class=\"table-light\">' + paciente.nombre.toUpperCase() + '</td>' +
+                    '<td class=\"table-light\">' + paciente.documento.toUpperCase() + '</td>' +
+                    '<td class=\"table-light\">' + paciente.fechaIngreso + '</td>' +
+                    '<td class=\"table-light\">' + paciente.email + '</td>' +
+                    '<td class=\"table-light\"">' + paciente.domicilio.id + '</td>' +
+                    '<td class=\"table-light\">' + paciente.domicilio.calle + '</td>' +
+                    '<td class=\"table-light\">' + paciente.domicilio.numero + '</td>' +
+                    '<td class=\"table-light\">' + paciente.domicilio.ciudad + '</td>' +
+                    '<td class=\"table-light\">' + paciente.domicilio.departamento + '</td>' +
+                    '<td class=\"table-light\">' + deleteButton + '</td>';
 
         };
 

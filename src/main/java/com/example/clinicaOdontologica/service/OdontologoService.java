@@ -1,6 +1,7 @@
 package com.example.clinicaOdontologica.service;
 
 import com.example.clinicaOdontologica.domain.Odontologo;
+import com.example.clinicaOdontologica.exceptions.ResourceNotFoundException;
 import com.example.clinicaOdontologica.repository.OdontologoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -30,8 +31,14 @@ public class OdontologoService {
         return odontologoRepository.findById(id);
     }
 
-    public void eliminarOdontologo(Long id){
-        odontologoRepository.deleteById(id);
+    public void eliminarOdontologo(Long id) throws ResourceNotFoundException{
+        Optional<Odontologo> odontologoBuscado = odontologoRepository.findById(id);
+        if(odontologoBuscado.isPresent()){
+            odontologoRepository.deleteById(id);
+        }else {
+            throw new ResourceNotFoundException("Error. Odontólogo con id: " + id + " no encontrado");
+        }
+
     }
 
     public Odontologo actualizarOdontologo(Odontologo odontologo){

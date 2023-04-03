@@ -4,6 +4,8 @@ import com.example.clinicaOdontologica.domain.Domicilio;
 import com.example.clinicaOdontologica.domain.Odontologo;
 import com.example.clinicaOdontologica.domain.Paciente;
 import com.example.clinicaOdontologica.dto.TurnoDTO;
+import com.example.clinicaOdontologica.exceptions.BadRequestException;
+import com.example.clinicaOdontologica.exceptions.ResourceNotFoundException;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -30,7 +32,7 @@ class TurnoServiceTest {
 
     @Test
     @Order(1)
-    public void guardarTurnoTest(){
+    public void guardarTurnoTest() throws BadRequestException {
         Domicilio domicilio = new Domicilio("Avenida","Sexta","Cali","Valle");
         Paciente paciente = new Paciente("Escarria","Estefania","abc123",
                 LocalDate.of(2023,3,15),"estefy@mail.com",domicilio);
@@ -52,7 +54,7 @@ class TurnoServiceTest {
 
     @Test
     @Order(2)
-    public void listarTurnosTest(){
+    public void listarTurnosTest() throws BadRequestException {
         TurnoDTO turnoDTO = new TurnoDTO();
         turnoDTO.setPaciente_id(1L);
         turnoDTO.setNombre_paciente("Estefania");
@@ -90,7 +92,7 @@ class TurnoServiceTest {
 
     @Test
     @Order(5)
-    public void eliminarTurnoTest(){
+    public void eliminarTurnoTest() throws ResourceNotFoundException {
         turnoService.eliminarTurno(2L);
         assertFalse(turnoService.buscarTurno(2L).isPresent());
     }

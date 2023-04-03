@@ -1,5 +1,6 @@
 package com.example.clinicaOdontologica.controller;
 import com.example.clinicaOdontologica.domain.Odontologo;
+import com.example.clinicaOdontologica.exceptions.ResourceNotFoundException;
 import com.example.clinicaOdontologica.service.OdontologoService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,13 +56,11 @@ public class OdontologoController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<String> eliminarOdontologo(@PathVariable Long id){
-        if(odontologoService.buscarOdontologo(id).isPresent()){
-            odontologoService.eliminarOdontologo(id);
-            logger.debug("Odontólogo eliminado - ID: " + id);
-            return ResponseEntity.ok("Odontólogo eliminado - ID: " + id);
-        }
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Odontólogo no encontrado");
+    public ResponseEntity<String> eliminarOdontologo(@PathVariable Long id) throws ResourceNotFoundException {
+        odontologoService.eliminarOdontologo(id);
+        logger.debug("Odontólogo eliminado - ID: " + id);
+        return ResponseEntity.ok("Odontólogo eliminado - ID: " + id);
+
     }
 
     @GetMapping

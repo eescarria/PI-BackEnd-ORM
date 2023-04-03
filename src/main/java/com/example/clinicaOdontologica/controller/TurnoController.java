@@ -3,6 +3,8 @@ package com.example.clinicaOdontologica.controller;
 import com.example.clinicaOdontologica.domain.Odontologo;
 import com.example.clinicaOdontologica.domain.Paciente;
 import com.example.clinicaOdontologica.dto.TurnoDTO;
+import com.example.clinicaOdontologica.exceptions.BadRequestException;
+import com.example.clinicaOdontologica.exceptions.ResourceNotFoundException;
 import com.example.clinicaOdontologica.service.OdontologoService;
 import com.example.clinicaOdontologica.service.PacienteService;
 import com.example.clinicaOdontologica.service.TurnoService;
@@ -33,18 +35,11 @@ public class TurnoController {
     }
 
     @PostMapping
-    public ResponseEntity<TurnoDTO> registrarTurno(@RequestBody TurnoDTO turno){
+    public ResponseEntity<TurnoDTO> registrarTurno(@RequestBody TurnoDTO turno) throws BadRequestException {
       ResponseEntity<TurnoDTO> respuesta;
-      Optional<Paciente> pacienteBuscado = pacienteService.buscarPaciente(turno.getPaciente_id());
-      Optional<Odontologo> odontologoBuscado = odontologoService.buscarOdontologo(turno.getOdontologo_id());
+      respuesta = ResponseEntity.ok(turnoService.guardarTurno(turno));
+      logger.debug("Se ha generado el turno para la fecha: "+ turno.getFecha());
 
-      if(pacienteBuscado.isPresent() && odontologoBuscado.isPresent()){
-          respuesta = ResponseEntity.ok(turnoService.guardarTurno(turno));
-          logger.debug("Se ha generado el turno para la fecha: "+ turno.getFecha());
-      }else {
-          respuesta = ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
-          logger.debug("No se logró generar el turno para la fecha: "+ turno.getFecha());
-      }
       return respuesta;
     }
 
@@ -63,15 +58,11 @@ public class TurnoController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<String> eliminarTurno(@PathVariable Long id){
-        if(turnoService.buscarTurno(id).isPresent()){
-            turnoService.eliminarTurno(id);
-            logger.debug("Turno eliminado - ID: " + id);
-            return ResponseEntity.ok("Turno eliminado - ID: " +id);
-        }else {
-            logger.debug("Turno no encontrado");
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Turno no encontrado");
-        }
+    public ResponseEntity<String> eliminarTurno(@PathVariable Long id) throws ResourceNotFoundException {
+        turnoService.eliminarTurno(id);
+        logger.debug("Turno eliminado - ID: " + id);
+        return ResponseEntity.ok("Turno eliminado - ID: " +id);
+
     }
 
     @GetMapping("id/{id}")

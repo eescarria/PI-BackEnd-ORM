@@ -4,6 +4,10 @@ import com.example.clinicaOdontologica.domain.Odontologo;
 import com.example.clinicaOdontologica.domain.Paciente;
 import com.example.clinicaOdontologica.domain.Turno;
 import com.example.clinicaOdontologica.dto.TurnoDTO;
+import com.example.clinicaOdontologica.exceptions.BadRequestException;
+import com.example.clinicaOdontologica.exceptions.ResourceNotFoundException;
+import com.example.clinicaOdontologica.repository.OdontologoRepository;
+import com.example.clinicaOdontologica.repository.PacienteRepository;
 import com.example.clinicaOdontologica.repository.TurnosRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,15 +20,26 @@ import java.util.Optional;
 public class TurnoService {
 
     private TurnosRepository turnosRepository;
+    private PacienteRepository pacienteRepository;
+    private OdontologoRepository odontologoRepository;
 
     @Autowired
-    public TurnoService(TurnosRepository turnosRepository) {
+    public TurnoService(TurnosRepository turnosRepository, PacienteRepository pacienteRepository, OdontologoRepository odontologoRepository) {
         this.turnosRepository = turnosRepository;
+        this.pacienteRepository = pacienteRepository;
+        this.odontologoRepository = odontologoRepository;
     }
 
-    public TurnoDTO guardarTurno(TurnoDTO turnoDTO){
+    public TurnoDTO guardarTurno(TurnoDTO turnoDTO) throws BadRequestException{
         Turno turno = convertirTurnoDTOATurno(turnoDTO);
-        return convertirTurnoATurnoDTO(turnosRepository.save(turno));
+        if(pacienteRepository.findById(turnoDTO.getPaciente_id()).isPresent() &&
+                odontologoRepository.findById(turnoDTO.getOdontologo_id()).isPresent()){
+            return convertirTurnoATurnoDTO(turnosRepository.save(turno));
+        }else {
+            throw new BadRequestException("Error. El turno no se pudo generar porque no existe el paciente o el odontólogo");
+        }
+
+
     }
 
     public List<TurnoDTO> listarTurnos(){
@@ -37,8 +52,14 @@ public class TurnoService {
         return listaTurnosDTO;
     }
 
-    public void eliminarTurno(Long id){
-        turnosRepository.deleteById(id);
+    public void eliminarTurno(Long id) throws ResourceNotFoundException{
+        Optional<Turno> turnoBuscado = turnosRepository.findById(id);
+       if(turnoBuscado.isPresent()){
+           turnosRepository.deleteById(id);
+       }else {
+           throw new ResourceNotFoundException("Error. Turno con id: " + id + " no encontrado");
+       }
+
     }
 
     public Optional<TurnoDTO> buscarTurno(Long id){

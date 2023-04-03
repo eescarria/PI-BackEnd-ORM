@@ -189,3 +189,50 @@
 [2023-03-31 12:16:22] [ DEBUG] [TurnoController:69] Turno eliminado - ID: 2
 [2023-03-31 12:19:03] [ DEBUG] [PacienteController:74] Se genera la lista de pacientes
 [2023-03-31 12:20:56] [ DEBUG] [PacienteController:82] Se ha encontrado el paciente con email: nora@mail.com
+[2023-04-03 09:11:15] [ DEBUG] [PacienteController:74] Se genera la lista de pacientes
+[2023-04-03 09:11:17] [ DEBUG] [OdontologoController:69] Se genera la lista de odontólogos
+[2023-04-03 09:12:56] [ DEBUG] [PacienteController:74] Se genera la lista de pacientes
+[2023-04-03 10:06:31] [ ERROR] [GlobalExceptions:16] com.example.clinicaOdontologica.exceptions.ResourceNotFoundException: Error. Paciente con id: 1 no encontrado
+[2023-04-03 10:25:22] [ ERROR] [GlobalExceptions:16] com.example.clinicaOdontologica.exceptions.ResourceNotFoundException: Error. Paciente con id: 1 no encontrado
+[2023-04-03 10:25:33] [ ERROR] [GlobalExceptions:16] com.example.clinicaOdontologica.exceptions.ResourceNotFoundException: Error. Odontólogo con id: 1 no encontrado
+[2023-04-03 10:25:48] [ ERROR] [GlobalExceptions:16] com.example.clinicaOdontologica.exceptions.ResourceNotFoundException: Error. Turno con id: 6 no encontrado
+[2023-04-03 11:23:23] [ ERROR] [GlobalExceptions:22] com.example.clinicaOdontologica.exceptions.BadRequestException: Error. El turno no se pudo generar porque no existe el paciente o el odontólogo
+[2023-04-03 12:22:10] [ DEBUG] [OdontologoController:68] Se genera la lista de odontólogos
+[2023-04-03 12:22:18] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-03 12:24:48] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-03 12:34:53] [ DEBUG] [OdontologoController:40] Se ha creado el odontólogo: Estefania Escarria
+[2023-04-03 12:34:55] [ DEBUG] [OdontologoController:68] Se genera la lista de odontólogos
+[2023-04-03 12:35:05] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-03 12:35:08] [ DEBUG] [TurnoController:54] No se logró generar la lista de turnos
+[2023-04-03 12:44:48] [ DEBUG] [OdontologoController:68] Se genera la lista de odontólogos
+[2023-04-03 12:44:55] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-03 12:45:08] [ DEBUG] [PacienteController:29] Se ha creado el paciente: Estefania Escarria
+[2023-04-03 12:45:10] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-03 12:45:22] [ DEBUG] [PacienteController:64] Paciente eliminado - ID: 1
+[2023-04-03 12:48:03] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-03 12:48:13] [ DEBUG] [TurnoController:54] No se logró generar la lista de turnos
+[2023-04-03 12:48:20] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-03 12:51:19] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-03 12:53:41] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-03 12:54:43] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-03 12:54:48] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-03 12:55:04] [ DEBUG] [PacienteController:29] Se ha creado el paciente: Estefania Escarria
+[2023-04-03 12:55:06] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-03 12:55:15] [ DEBUG] [PacienteController:53] Se ha encontrado el paciente con id: 1
+[2023-04-03 12:55:22] [ DEBUG] [PacienteController:40] Se ha actualizado el paciente con id: 1
+[2023-04-03 12:55:23] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-03 12:55:36] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-03 12:59:20] [ DEBUG] [PacienteController:29] Se ha creado el paciente: Estefania Escarria
+[2023-04-03 12:59:22] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-03 13:00:31] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-03 13:00:42] [ DEBUG] [PacienteController:29] Se ha creado el paciente: Estefania Escarria
+[2023-04-03 13:00:44] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-03 13:04:19] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-03 13:04:30] [ DEBUG] [PacienteController:29] Se ha creado el paciente: Estefania Escarria
+[2023-04-03 13:04:32] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-03 13:04:49] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-03 13:05:42] [ DEBUG] [PacienteController:29] Se ha creado el paciente: Estefania Escarria
+[2023-04-03 13:05:44] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-03 13:35:46] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-03 13:35:59] [ DEBUG] [PacienteController:29] Se ha creado el paciente: Estefania Escarria
+[2023-04-03 13:36:01] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
