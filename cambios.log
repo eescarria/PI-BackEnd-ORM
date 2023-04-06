@@ -236,3 +236,10 @@
 [2023-04-03 13:35:46] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
 [2023-04-03 13:35:59] [ DEBUG] [PacienteController:29] Se ha creado el paciente: Estefania Escarria
 [2023-04-03 13:36:01] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-05 14:10:06] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-05 14:11:37] [ DEBUG] [OdontologoController:40] Se ha creado el odontólogo: Julian Garcia
+[2023-04-05 14:11:41] [ DEBUG] [OdontologoController:68] Se genera la lista de odontólogos
+[2023-04-05 14:14:11] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-05 14:14:30] [ DEBUG] [PacienteController:29] Se ha creado el paciente: Estefania Escarria
+[2023-04-05 14:14:33] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
+[2023-04-05 14:15:30] [ DEBUG] [PacienteController:71] Se genera la lista de pacientes
