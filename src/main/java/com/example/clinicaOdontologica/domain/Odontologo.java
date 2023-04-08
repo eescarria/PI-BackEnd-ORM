@@ -18,7 +18,7 @@ public class Odontologo {
     @Column
     private String apellido;
 
-    @OneToMany(mappedBy = "odontologo", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "odontologo", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Set<Turno> turnos = new HashSet<>();
 
 

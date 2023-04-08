@@ -42,11 +42,11 @@ window.addEventListener('load', function () {
             //como primer columna pondremos el boton modificar
             //luego los datos de la pelicula
             //como ultima columna el boton eliminar
-            odontologoRow.innerHTML = '<td>' + updateButton + '</td>' +
-                    '<td class=\"td_numeroMatricula\">' + odontologo.numeroMatricula.toUpperCase() + '</td>' +
-                    '<td class=\"td_nombre\">' + odontologo.nombre.toUpperCase() + '</td>' +
-                    '<td class=\"td_apellido\">' + odontologo.apellido.toUpperCase() + '</td>' +
-                    '<td>' + deleteButton + '</td>';
+            odontologoRow.innerHTML = '<td class=\"table-light\">' + updateButton + '</td>' +
+                    '<td class=\"table-light\">' + odontologo.numeroMatricula.toUpperCase() + '</td>' +
+                    '<td class=\"table-light\">' + odontologo.nombre.toUpperCase() + '</td>' +
+                    '<td class=\"table-light\">' + odontologo.apellido.toUpperCase() + '</td>' +
+                    '<td class=\"table-light\">' + deleteButton + '</td>';
 
         };
 

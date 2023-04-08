@@ -13,11 +13,11 @@ window.addEventListener('load', function () {
         //para poder identificarla y modificarla para no cargarla como nueva
         const formData = {
             id: document.querySelector('#turno_id').value,
-            odontologo_id: querySelector('#odontologo_id').value,
-            paciente_id: querySelector('#paciente_id').value,
+            odontologo_id: document.querySelector('#odontologo_id').value,
+            paciente_id: document.querySelector('#paciente_id').value,
             fecha : document.querySelector('#fecha').value,
-            nombre_odontologo: querySelector('#odontologo_nombre').value,
-            nombre_paciente: querySelector('#paciente_nombre').value
+            nombre_odontologo: document.querySelector('#odontologo_nombre').value,
+            nombre_paciente: document.querySelector('#paciente_nombre').value
         };
 
         //invocamos utilizando la función fetch la API peliculas con el método PUT que modificará

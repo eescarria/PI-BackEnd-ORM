@@ -16,6 +16,7 @@ import java.util.Optional;
 @RequestMapping("/pacientes")
 public class PacienteController {
     private static final Logger logger = Logger.getLogger(PacienteController.class);
+
     private PacienteService pacienteService;
 
     @Autowired
