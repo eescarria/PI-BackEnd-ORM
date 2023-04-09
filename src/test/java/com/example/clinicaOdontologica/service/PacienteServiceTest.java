@@ -26,18 +26,18 @@ class PacienteServiceTest {
     @Test
     @Order(1)
     public void guardarPacienteTest(){
-        Domicilio domicilio = new Domicilio("Avenida","Sexta","Cali","Valle");
-        Paciente paciente = new Paciente("Escarria","Estefania","abc123",
-                LocalDate.of(2023,3,15),"estefy@mail.com",domicilio);
+        Domicilio domicilio = new Domicilio("Avenida","Cuarta","Medellin","Antioquia");
+        Paciente paciente = new Paciente("Alvear","Luisa","zxy642",
+                LocalDate.of(2023,3,10),"luisa@mail.com",domicilio);
 
         Paciente pacienteGuardado = pacienteService.guardarPaciente(paciente);
-        assertEquals(1L,pacienteGuardado.getId());
+        assertEquals(2L,pacienteGuardado.getId());
     }
 
     @Test
     @Order(2)
     public void buscarPacienteTest(){
-        Long idABuscar = 1L;
+        Long idABuscar = 2L;
         Optional<Paciente> pacienteBuscado = pacienteService.buscarPaciente(idABuscar);
         assertNotNull(pacienteBuscado.get());
     }
@@ -51,7 +51,7 @@ class PacienteServiceTest {
         pacienteService.guardarPaciente(paciente);
 
         List<Paciente> listaPacientes = pacienteService.buscarTodos();
-        assertEquals(2,listaPacientes.size());
+        assertEquals(3,listaPacientes.size());
     }
 
     @Test
@@ -60,7 +60,7 @@ class PacienteServiceTest {
         Domicilio domicilio = new Domicilio("Avenida","Quinta","Cali","Valle");
         Paciente pacienteAActualizar = new Paciente("Alvear","Juan","1234",
                 LocalDate.of(2023,3,17),"juan@mail.com",domicilio);
-        pacienteAActualizar.setId(2L);
+        pacienteAActualizar.setId(3L);
 
         Paciente pacienteActualizado = pacienteService.actualizarPaciente(pacienteAActualizar);
         assertEquals("1234", pacienteActualizado.getDocumento());
@@ -68,7 +68,7 @@ class PacienteServiceTest {
     @Test
     @Order(5)
     public void buscarPacienteXEmail(){
-        String emailABuscar = "estefy@mail.com";
+        String emailABuscar = "luisa@mail.com";
         Optional<Paciente> pacienteBuscado = pacienteService.buscarXEmail(emailABuscar);
         assertNotNull(pacienteBuscado.get());
     }

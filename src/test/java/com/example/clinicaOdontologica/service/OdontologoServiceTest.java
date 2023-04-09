@@ -24,16 +24,16 @@ class OdontologoServiceTest {
     @Test
     @Order(1)
     public void guardarOdontologoTest(){
-        Odontologo odontologo = new Odontologo("abc123","Miguel","Ruiz");
+        Odontologo odontologo = new Odontologo("abc456","Ana","Lopez");
         Odontologo odontologoGuardado = odontologoService.guardarOdontologo(odontologo);
 
-        assertEquals(1L, odontologoGuardado.getId());
+        assertEquals(2L, odontologoGuardado.getId());
     }
 
     @Test
     @Order(2)
     public void buscarOdontologoTest(){
-        Long idABuscar = 1L;
+        Long idABuscar = 2L;
         Optional<Odontologo> odontologoBuscado = odontologoService.buscarOdontologo(idABuscar);
         assertNotNull(odontologoBuscado.get());
     }
@@ -41,18 +41,18 @@ class OdontologoServiceTest {
     @Test
     @Order(3)
     public void listarOdontologosTest(){
-        Odontologo odontologo = new Odontologo("def456","Julian","Garcia");
+        Odontologo odontologo = new Odontologo("def457","Julian","Garcia");
         odontologoService.guardarOdontologo(odontologo);
 
         List<Odontologo> listaOdontologos = odontologoService.buscarTodos();
-        assertEquals(2,listaOdontologos.size());
+        assertEquals(3,listaOdontologos.size());
     }
 
     @Test
     @Order(4)
     public void actualizarOdontologoTest(){
         Odontologo odontologo = new Odontologo("def456","Julian","Herrera");
-        odontologo.setId(2L);
+        odontologo.setId(3L);
 
         Odontologo odontologoActualizado = odontologoService.actualizarOdontologo(odontologo);
         assertEquals("Herrera", odontologoActualizado.getApellido());

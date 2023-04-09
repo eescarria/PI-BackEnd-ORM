@@ -34,18 +34,18 @@ class TurnoServiceTest {
     @Order(1)
     public void guardarTurnoTest() throws BadRequestException {
         Domicilio domicilio = new Domicilio("Avenida","Sexta","Cali","Valle");
-        Paciente paciente = new Paciente("Escarria","Estefania","abc123",
-                LocalDate.of(2023,3,15),"estefy@mail.com",domicilio);
+        Paciente paciente = new Paciente("Luis","Alvarez","mno134",
+                LocalDate.of(2023,3,20),"luis@mail.com",domicilio);
         pacienteService.guardarPaciente(paciente);
 
-        Odontologo odontologo = new Odontologo("abc123","Miguel","Ruiz");
+        Odontologo odontologo = new Odontologo("abc012","Felipe","Martinez");
         odontologoService.guardarOdontologo(odontologo);
 
         TurnoDTO turnoDTO = new TurnoDTO();
-        turnoDTO.setPaciente_id(1L);
-        turnoDTO.setNombre_paciente("Estefania");
-        turnoDTO.setOdontologo_id(1L);
-        turnoDTO.setNombre_odontologo("Miguel");
+        turnoDTO.setPaciente_id(2L);
+        turnoDTO.setNombre_paciente("Luis");
+        turnoDTO.setOdontologo_id(2L);
+        turnoDTO.setNombre_odontologo("Felipe");
         turnoDTO.setFecha(LocalDate.of(2023,4,15));
         TurnoDTO turnoGuardado = turnoService.guardarTurno(turnoDTO);
 
@@ -56,9 +56,9 @@ class TurnoServiceTest {
     @Order(2)
     public void listarTurnosTest() throws BadRequestException {
         TurnoDTO turnoDTO = new TurnoDTO();
-        turnoDTO.setPaciente_id(1L);
+        turnoDTO.setPaciente_id(2L);
         turnoDTO.setNombre_paciente("Estefania");
-        turnoDTO.setOdontologo_id(1L);
+        turnoDTO.setOdontologo_id(2L);
         turnoDTO.setNombre_odontologo("Miguel");
         turnoDTO.setFecha(LocalDate.of(2023,4,25));
         turnoService.guardarTurno(turnoDTO);
@@ -70,7 +70,7 @@ class TurnoServiceTest {
     @Test
     @Order(3)
     public void buscarTurnoTest(){
-        Long idABuscar = 1L;
+        Long idABuscar = 2L;
         Optional<TurnoDTO> turnoBuscado = turnoService.buscarTurno(idABuscar);
         assertNotNull(turnoBuscado.get());
     }
@@ -84,10 +84,10 @@ class TurnoServiceTest {
         turnoAActualizar.setNombre_paciente("Estefania");
         turnoAActualizar.setOdontologo_id(1L);
         turnoAActualizar.setNombre_odontologo("Miguel");
-        turnoAActualizar.setFecha(LocalDate.of(2023,4,25));
+        turnoAActualizar.setFecha(LocalDate.of(2023,5,25));
 
         TurnoDTO turnoActualizado = turnoService.actualizarTurno(turnoAActualizar);
-        assertEquals(LocalDate.of(2023,4,25), turnoActualizado.getFecha());
+        assertEquals(LocalDate.of(2023,5,25), turnoActualizado.getFecha());
     }
 
     @Test

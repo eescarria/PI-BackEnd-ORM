@@ -470,3 +470,74 @@
 [2023-04-08 14:54:38] [ DEBUG] [OdontologoController:68] Se genera la lista de odontólogos
 [2023-04-08 14:54:40] [ DEBUG] [OdontologoController:61] Odontólogo eliminado - ID: 2
 [2023-04-08 14:54:43] [ DEBUG] [TurnoController:51] Se genera la lista de turnos
+[2023-04-08 15:21:44] [ DEBUG] [OdontologoController:68] Se genera la lista de odontólogos
+[2023-04-08 15:22:03] [ DEBUG] [PacienteController:72] Se genera la lista de pacientes
+[2023-04-08 15:24:04] [ DEBUG] [PacienteController:72] Se genera la lista de pacientes
+[2023-04-08 15:27:12] [ DEBUG] [PacienteController:72] Se genera la lista de pacientes
+[2023-04-08 15:27:16] [ DEBUG] [PacienteController:54] Se ha encontrado el paciente con id: 1
+[2023-04-08 15:27:20] [ DEBUG] [PacienteController:41] Se ha actualizado el paciente con id: 1
+[2023-04-08 15:27:20] [ DEBUG] [PacienteController:72] Se genera la lista de pacientes
+[2023-04-08 15:28:17] [ DEBUG] [PacienteController:72] Se genera la lista de pacientes
+[2023-04-08 15:30:53] [ DEBUG] [PacienteController:72] Se genera la lista de pacientes
+[2023-04-08 15:34:25] [ DEBUG] [PacienteController:72] Se genera la lista de pacientes
+[2023-04-08 15:35:25] [ DEBUG] [PacienteController:72] Se genera la lista de pacientes
+[2023-04-08 15:37:02] [ DEBUG] [PacienteController:72] Se genera la lista de pacientes
+[2023-04-08 15:37:14] [ DEBUG] [PacienteController:54] Se ha encontrado el paciente con id: 1
+[2023-04-08 15:37:22] [ DEBUG] [PacienteController:41] Se ha actualizado el paciente con id: 1
+[2023-04-08 15:37:22] [ DEBUG] [PacienteController:72] Se genera la lista de pacientes
+[2023-04-08 15:44:58] [ DEBUG] [PacienteController:72] Se genera la lista de pacientes
+[2023-04-08 15:49:18] [ DEBUG] [PacienteController:72] Se genera la lista de pacientes
+[2023-04-08 15:49:22] [ DEBUG] [OdontologoController:68] Se genera la lista de odontólogos
+[2023-04-08 15:49:27] [ DEBUG] [OdontologoController:30] Se ha encontrado el odontólogo con id: 1
+[2023-04-08 15:49:29] [ DEBUG] [OdontologoController:50] Se ha actualizado el odontólogo con id: 1
+[2023-04-08 15:49:29] [ DEBUG] [OdontologoController:68] Se genera la lista de odontólogos
+[2023-04-08 15:49:34] [ DEBUG] [TurnoController:54] No se logró generar la lista de turnos
+[2023-04-08 15:49:41] [ DEBUG] [TurnoController:41] Se ha generado el turno para la fecha: 2023-04-20
+[2023-04-08 15:49:43] [ DEBUG] [TurnoController:51] Se genera la lista de turnos
+[2023-04-08 15:49:47] [ DEBUG] [TurnoController:72] Se ha encontrado el turno con id: 1
+[2023-04-08 15:49:52] [ DEBUG] [TurnoController:86] Se ha actualizado el turno con id: 1
+[2023-04-08 15:49:52] [ DEBUG] [TurnoController:51] Se genera la lista de turnos
+[2023-04-08 15:50:32] [ DEBUG] [TurnoController:54] No se logró generar la lista de turnos
+[2023-04-08 15:50:39] [ DEBUG] [TurnoController:41] Se ha generado el turno para la fecha: 2023-04-20
+[2023-04-08 15:50:41] [ DEBUG] [TurnoController:51] Se genera la lista de turnos
+[2023-04-08 15:50:54] [ DEBUG] [OdontologoController:68] Se genera la lista de odontólogos
+[2023-04-08 15:51:01] [ DEBUG] [OdontologoController:61] Odontólogo eliminado - ID: 1
+[2023-04-08 15:51:03] [ DEBUG] [PacienteController:72] Se genera la lista de pacientes
+[2023-04-08 15:51:06] [ DEBUG] [PacienteController:65] Paciente eliminado - ID: 1
+[2023-04-08 15:51:08] [ DEBUG] [TurnoController:54] No se logró generar la lista de turnos
+[2023-04-08 21:02:34] [ DEBUG] [OdontologoController:68] Se genera la lista de odontólogos
+[2023-04-08 21:02:44] [ DEBUG] [OdontologoController:40] Se ha creado el odontólogo: Estefa Garcia
+[2023-04-08 21:02:46] [ DEBUG] [OdontologoController:68] Se genera la lista de odontólogos
+[2023-04-08 21:03:05] [ DEBUG] [PacienteController:72] Se genera la lista de pacientes
+[2023-04-08 21:03:25] [ DEBUG] [PacienteController:30] Se ha creado el paciente: NORALBA ARTEAGA
+[2023-04-08 21:03:29] [ DEBUG] [PacienteController:72] Se genera la lista de pacientes
+[2023-04-08 21:03:33] [ DEBUG] [PacienteController:54] Se ha encontrado el paciente con id: 2
+[2023-04-08 21:03:39] [ DEBUG] [PacienteController:41] Se ha actualizado el paciente con id: 2
+[2023-04-08 21:03:39] [ DEBUG] [PacienteController:72] Se genera la lista de pacientes
+[2023-04-08 21:03:52] [ DEBUG] [TurnoController:41] Se ha generado el turno para la fecha: 2023-04-19
+[2023-04-08 21:04:03] [ DEBUG] [TurnoController:41] Se ha generado el turno para la fecha: 2023-04-18
+[2023-04-08 21:04:07] [ DEBUG] [TurnoController:51] Se genera la lista de turnos
+[2023-04-08 21:04:09] [ DEBUG] [TurnoController:72] Se ha encontrado el turno con id: 2
+[2023-04-08 21:04:14] [ DEBUG] [TurnoController:86] Se ha actualizado el turno con id: 2
+[2023-04-08 21:04:14] [ DEBUG] [TurnoController:51] Se genera la lista de turnos
+[2023-04-08 21:04:23] [ DEBUG] [TurnoController:63] Turno eliminado - ID: 2
+[2023-04-08 21:04:33] [ DEBUG] [PacienteController:72] Se genera la lista de pacientes
+[2023-04-08 21:04:36] [ DEBUG] [PacienteController:65] Paciente eliminado - ID: 1
+[2023-04-08 21:04:45] [ DEBUG] [TurnoController:54] No se logró generar la lista de turnos
+[2023-04-08 21:04:57] [ DEBUG] [OdontologoController:68] Se genera la lista de odontólogos
+[2023-04-08 21:05:02] [ DEBUG] [PacienteController:72] Se genera la lista de pacientes
+[2023-04-08 21:05:47] [ DEBUG] [TurnoController:54] No se logró generar la lista de turnos
+[2023-04-08 21:06:03] [ DEBUG] [TurnoController:41] Se ha generado el turno para la fecha: 2023-04-28
+[2023-04-08 21:06:09] [ DEBUG] [TurnoController:51] Se genera la lista de turnos
+[2023-04-08 21:06:25] [ ERROR] [GlobalExceptions:22] com.example.clinicaOdontologica.exceptions.BadRequestException: Error. El turno no se pudo generar porque no existe el paciente o el odontólogo
+[2023-04-08 21:06:32] [ DEBUG] [TurnoController:51] Se genera la lista de turnos
+[2023-04-08 21:06:39] [ DEBUG] [TurnoController:72] Se ha encontrado el turno con id: 3
+[2023-04-08 21:06:44] [ DEBUG] [TurnoController:86] Se ha actualizado el turno con id: 3
+[2023-04-08 21:06:44] [ DEBUG] [TurnoController:51] Se genera la lista de turnos
+[2023-04-08 21:06:48] [ DEBUG] [TurnoController:63] Turno eliminado - ID: 3
+[2023-04-08 21:07:12] [ DEBUG] [OdontologoController:68] Se genera la lista de odontólogos
+[2023-04-08 21:07:14] [ DEBUG] [PacienteController:72] Se genera la lista de pacientes
+[2023-04-08 21:07:24] [ DEBUG] [PacienteController:54] Se ha encontrado el paciente con id: 2
+[2023-04-08 21:07:30] [ DEBUG] [PacienteController:41] Se ha actualizado el paciente con id: 2
+[2023-04-08 21:07:31] [ DEBUG] [PacienteController:72] Se genera la lista de pacientes
+[2023-04-08 21:07:43] [ DEBUG] [OdontologoController:68] Se genera la lista de odontólogos
